@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <dir class="screen">
+        <div class="leftside">
+            <img src="images/PikPng.com_homero-png_2677748.png" alt="" srcset="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form action="cadastro.html" method="POST" class="validator" >
+                <label for="name">
+                    Seu nome:<br/>
+                    <input type="text" name="name" data-rules="min=2"/>
+                </label>
+                <label for="email">
+                    Seu e-mail:<br/>
+                    <input type="text" name="email" data-rules="required|email"/>
+                </label>
+                <label for="password">
+                    Sua senha:<br/>
+                    <input type="password" name="password" data-rules="min=4" />
+                </label>
+                <label for="Cadastrar">
+                    <input type="submit" value="Cadastrar">
+                </label>
+            </form>
+
+            <div>
+                Já tem uma conta? <a href=""> Faça o Login</a>
+            </div>
+        </div>
+    </dir>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
